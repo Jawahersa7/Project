@@ -4,16 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>path - Your Source for Smart Glasses News</title>
-    
-   
-
     <link rel="stylesheet" href="styles.css">
     <style>
         body {
             font-family: 'Helvetica Neue', Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color:white;
+            background-color: white;
             color: #333;
             line-height: 1.6;
         }
@@ -21,11 +18,16 @@
             direction: rtl; /* Right-to-left for Arabic */
         }
         header {
-            background:#004080; /* Dark blue header */
-            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #a6ccff;
+            color: black;
             padding: 20px 0;
-            text-align: center;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        header img {
+            max-width: 300px;
+            height: auto;
         }
         nav ul {
             list-style-type: none;
@@ -57,7 +59,7 @@
         .sidebar {
             flex: 1;
             padding: 20px;
-            background:#f2f2f2;
+            background: #f2f2f2;
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
@@ -67,8 +69,8 @@
         footer {
             text-align: center;
             padding: 15px 0;
-            background :#a6ccff; /* Dark blue footer */
-            color:black;
+            background: #a6ccff; /* Dark blue footer */
+            color: black;
             margin-top: 20px;
         }
         article {
@@ -81,11 +83,11 @@
         .featured-articles {
             margin-top: 20px;
             padding: 10px;
-            background:rgb(119, 187, 255); /* Light blue for featured articles */
+            background: rgb(119, 187, 255); /* Light blue for featured articles */
             border-radius: 8px;
         }
         .sidebar h2 {
-            border-bottom:linear-gradient(to right,#a6ccff); /* Dark blue underline */
+            border-bottom: linear-gradient(to right, #a6ccff); /* Dark blue underline */
             padding-bottom: 5px;
         }
         .sidebar ul {
@@ -112,281 +114,60 @@
             background: rgba(119, 203, 255, 0.6); /* Light blue background for About Us */
             border-radius: 8px;
         }
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .container {
-                flex-direction: column;
-            }
-            .sidebar {
-                margin-left: 0;
-                margin-top: 20px;
-            }
-        }
-        .language-switcher, .location-switcher {
-            margin-top: 10px;
-            font-size: 16px;
-            color: black; /* Set text color to white */
-        }
-        .language-switcher a, .location-switcher a {
-            color: black; /* Set link color to white */
-            text-decoration: none;
-            margin-right: 10px;
-        }
-        .language-switcher a:hover, .location-switcher a:hover {
-            text-decoration: underline; /* Adds a hover effect */
-            opacity: 0.8; /* Slightly dim the link on hover for effect */
-        }
     </style>
 </head>
 <body>
-    <header>
-        <h1 id="header-title"></h1>
-        <img src= "C:\Users\JS\Downloads\bus web\bus web\images\path[1].png" > 
-    <h1 style="display: inline-block; margin-left: 20px;"></h1>
-        <style> 
-        header {
-            display: flexbox; /* Use flexbox for layout */
-            align-items: center; /* Center vertically */
-           justify-content: center; /* Center horizontally */
-            background:#a6ccff;
-            color: black;
-            padding: 20px 0;
-        }
-        
-        header img {
-            max-width: 300px; /* Adjust size as needed */
-            height: auto; /* Maintain aspect ratio */
-        }
-        
-        </style>
-        <nav>
-            <ul>
-                <li><a href="#Concept, Visions and goals">Concept, Visions and goals</a></li>
-                <li><a href="#Generating Knowledge and Awareness">Generating Knowledge and Awarenes</a></li>
-                <li><a href="#Generating Ideas">Generating Ideas</a></li>
-                <li><a href="#Approach to Innovation">Approach to Innovation</a></li>
-                <li><a href="#contact">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <div class="container">
-        <div class="main-content">
-            <section id="Generating Knowledge and Awareness">
-                <h2>Generating Knowledge and Awareness</h2>
-                <article>
-                    <h3 ><p>At our company, we talked to people about the problems blind individuals face in public places.</p>
-                        <p> We used a questionnaire to gather their thoughts. </p>
-                        <p>Most said it’s hard for blind people to move around because there aren’t enough tools to help them, and they often feel unsafe.</p>
-                        <p> They also want something that gives them directions in real-time and helps them be independent without needing help all the time.</p>
-                         <p>Many also mentioned that public places should be better designed for blind people. These ideas helped us create a product that solves these problems.</p></h3>
-                      </article>
-                
-            </section>
-            <style>
-                .small-image {
-                    width: 100%; /* Makes the image responsive to the container */
-                    height: 200px; /* Fixed height for uniformity */
-                    object-fit: cover; /* Ensures the image covers the area without distortion */
-                }
-            
-                article {
-                    text-align: center; /* Centers the text */
-                    margin-bottom: 20px; /* Adds space between articles */
-                }
-            
-                .gallery {
-                    display: flex;
-                    flex-wrap: wrap;
-                    justify-content: space-between; /* Adjust spacing between items */
-                }
-            
-                .item {
-                    width: calc(50% - 10px); /* Two items per row with space */
-                }
-            </style>
-            
-            <!DOCTYPE html>
-            <html lang="en">
-            <head>
-                <meta charset="UTF-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <title>Smart Glasses</title>
-                <link rel="stylesheet" href="styles.css">
-            </head>
-            <body>
-                <div class="gallery">
-                    <article class="item">
-                        
-                    </article>
-                    
-                    <article class="item">
-                        
-                    </article>
-                </div>
-            </body>
-            </html>
-             <div class="Design:">
-                <h2>Design</h2>
-                <article>
-                    <h3 id="featured-titl-1"> smart glasses </h3>
-                    <img src="C:\Users\JS\Downloads\bus web\bus web\images\WhatsApp Image 2024-10-19 at 21.50.10_118371e8.jpg" alt="Augmented Reality" class="small-image">
-                    <p> Smart glasses for the blind</p>
-                </article>
-                <article>
-                    <h3 id="featured-title-2"></h3>
-                    <img src="C:\Users\JS\Downloads\bus web\bus web\images\WhatsApp Image 2024-10-19 at 10.14.17_a03e8611.jpg" alt="Fitness Tracking"class="small-image">
-                    <p>secand design for smart glasses</p>
-                </article>
-            </div>
 
-        
-            </div>
-            <div class="concept-visions-goals">
-                <h2>Concept, Visions and Goals</h2>
-                <article>
-                    <h3 id="featured-title-1" class="small-text">path that creates special glasses for people with visual impairments. The glasses have a camera that helps users see their surroundings and headphones that provide audio directions.
-                         The company's vision is to help visually impaired individuals move around confidently and engage with the world around them.
-                 Their mission is to create technology that allows these individuals to express themselves and live more independently.
-                         The company belongs to the assistive technology industry and focuses on developing tools that make life better for their users.
-                          Their goals include improving their products, reaching more customers, and working with communities to promote inclusion. 
-                          The company's team includes Designer Ashwaq, Technical Engineer Aysha, Customer Support Representative Mahra, Marketing Coordinator Shamsa, and Software Developer Jawaher, all dedicated to their mission.
-                           With their innovative glasses, the company aims to help users avoid obstacles and connect more with their communities, ensuring they feel respected and valued.</h3>
-                    <img src="C:\Users\JS\Downloads\bus web\bus web\images\WhatsApp Image 2024-10-19 at 21.50.10_118371e8.jpg" alt="Augmented Reality" class="small-image">
-                    <p class="small-text">problrm :Blind and visually impaired individuals face significant challenges when navigating public spaces, impacting their independence and quality of life. They encounter barriers such as poorly organized infrastructure, inaccessible wayfinding systems, and social stigma, which can lead to feelings of isolation and safety risks. Addressing these issues is essential for promoting inclusion and supporting the rights of disabled individuals, ultimately benefiting society..</p>
-                </article>
-                <article>
-                    <h3 id="featured-title-2" class="small-text">Smart Glasses for Fitness Tracking</h3>
-                    <img src="C:\Users\JS\Downloads\bus web\bus web\images\WhatsApp Image 2024-10-19 at 10.14.17_a03e8611.jpg" alt="Fitness Tracking" class="small-image">
-                    <p class="small-text">How smart glasses are changing the game for fitness enthusiasts.</p>
-                </article>
-                <article>
-                    <h3 id="featured-title-2" class="small-text">Smart Glasses for Fitness Tracking</h3>
-                    <img src="C:\Users\JS\Downloads\bus web\bus web\images\WhatsApp Image 2024-10-19 at 10.40.45_9f492c17.jpg" >
-                    <p class="small-text"></p>
-                    <div class="about-section" id="Generating Ideas">
-                        <h2>Generating Ideas</h2>
-                        <p id="about-desc">
-                            Strengths:
-                            Smart Technology
-                            More Independence
-                            Easy to Use
-                            Helps the Community
-        
-                            Weaknesses:
-                            Expensive to Make
-                            Technology Problems
-                            Learning Curve
-        
-                            Opportunities:
-                            More People Need It
-                            Partnerships
-                            Better Technology
-        
-                            Threats:
-                            Other Companies
-                            Rules and Regulations
-                            Economy</div>
-                            <div class="about-section" id="Approach to Innovation">
-                                <h2>Approach to Innovation </h2>
-                                <p id="about-desc">Product Description:
-                                    Our product is called VisionDirection, a pair of smart glasses designed to help people who are visually impaired. These glasses have a camera that looks around and sends information to the user through headphones. The glasses tell the user what’s in front of them, helping them avoid obstacles and walk safely. The goal is to make it easier for blind individuals to move around by themselves and feel confident.
-                                <p>Product Specifications:</p>
-                                <p> Camera: A small camera on the glasses that helps "see" what's around.</p>
-                                <p> Audio Feedback: Headphones that speak to the user, telling them what the camera sees.</p>
-                                <p> AI Technology: Smart technology that understands what the camera sees and gives clear instructions to the user.</p>
-                                <p>Voice Commands: Users can talk to the glasses to control them without using their hands.</p>
-                                <p> Lightweight Design: The glasses are light and comfortable to wear all day.</p>
-                                <p>Battery: The battery lasts up to 12 hours before it needs to be charged.</p>
-                                <p>Bluetooth: The glasses can connect to a smartphone using Bluetooth for extra features.</p>
-                                <p> Durable: The glasses are strong and can handle everyday wear and tear.</p>
-                                    
-                                    
-                                    </div>
-                    
-                </article>
-            </div>
+<header>
+    <img src="images/path[1].png" alt="Smart Glasses News Logo">
+</header>
 
-            <style>
-                .small-text {
-                    font-size: 14px; /* Adjust this value to make the text smaller or larger */
-                    line-height: 2; /* Adjusts spacing between lines */
-                }
-                
-                .concept-visions-goals {
-                    margin: 20px; /* Adds margin around the section */
-                }
-                
-                .small-image {
-                    width: 200%; /* Makes the image responsive */
-                    height: 300px; /* Fixed height for uniformity */
-                    object-fit: cover; /* Ensures the image maintains its aspect ratio */
-                }
-            </style>
-            
+<nav>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
 
-
-        <aside class="sidebar">
-            <h2>Company members</h2>
-            <ul>
-                <li><a href="#"> Designer</a></li>
-                <li><a href="#">Technical</a></li>
-                <li><a href="#">Customer Support </a></li>
-                <li><a href="#">Marketing </a></li>
-                <li><a href="#">Developer</a></li>
-            </ul>
-            
-            <div class="social-media">
-              <h2> <p class="small-address">Follow Us </p></h2>
-              <style>
-                .small-address {
-                    font-size: 20px; /* Adjust this value to change the size */
-                    color:black; /* Optional: Change the color for better readability */
-                }
-            </style>
-                <a href="https://facebook.com" target="_blank" title="Facebook">
-                    <img src="black-facebook-icon-1.jpg" alt="Facebook">
-                </a>
-                <a href="https://twitter.com" target="_blank" title="X">
-                    <img src="twitter-app-new-logo-x-black-background_1017-45425.avif" alt="X">
-                </a>
-                <a href="https://instagram.com" target="_blank" title="Instagram">
-                    <img src="instagram-clipart-logo-black-6.png" alt="Instagram">
-                </a>
-                <a href="https://linkedin.com" target="_blank" title="LinkedIn">
-                    <img src="R.png" alt="LinkedIn">
-                </a>
-            </div>
-        </aside>
+<div class="container">
+    <div class="main-content">
+        <article>
+            <h2>Augmented Reality and Fitness Tracking</h2>
+            <img src="images/WhatsApp Image 2024-10-19 at 21.50.10_118371e8.jpg" alt="Augmented Reality">
+            <p>Augmented Reality is enhancing user experiences across various domains. It's particularly useful in fitness tracking, providing real-time data and immersive feedback.</p>
+        </article>
+        <article>
+            <h2>Fitness Tracking with Smart Glasses</h2>
+            <img src="images/WhatsApp Image 2024-10-19 at 10.14.17_a03e8611.jpg" alt="Fitness Tracking">
+            <p>Fitness tracking technology embedded in smart glasses can track your movements, heart rate, and other metrics seamlessly, providing insights in real-time.</p>
+        </article>
+        <article>
+            <h2>Real-Time Health Monitoring</h2>
+            <img src="images/WhatsApp Image 2024-10-19 at 10.40.45_9f492c17.jpg" alt="Health Monitoring">
+            <p>Real-time health monitoring technology is transforming how we approach wellness, allowing users to get immediate data on their physical condition and activity levels.</p>
+        </article>
     </div>
-    
-    
-            </div>
-   
+
+    <div class="sidebar">
+        <h2>Featured Articles</h2>
+        <ul>
+            <li><a href="#">Augmented Reality in Sports</a></li>
+            <li><a href="#">The Future of Fitness Tech</a></li>
+            <li><a href="#">How Wearables are Changing Health Monitoring</a></li>
+        </ul>
+    </div>
 </div>
 
-
-    <footer>
-        <p>2024 path All rights reserved, Change location and language</p>
-        <div class="language-switcher">
-            <button onclick="setLanguage('en')">English</button>
-            <button onclick="setLanguage('ar')">العربية</button>
-        </div>
-        <div class="location-switcher">
-            <span>Select Location: </span>
-            <a href="https://www.google.com/maps/place/%D8%A7%D9%84%D8%A5%D9%85%D8%A7%D8%B1%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9+%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%A9%E2%80%AD/@24.3361317,56.5909311,7z/data=!3m1!4b1!4m6!3m5!1s0x3e5e48dfb1ab12bd:0x33d32f56c0080aa7!8m2!3d23.424076!4d53.847818!16zL20vMGoxejg?entry=ttu&g_ep=EgoyMDI0MTAxNi4wIKXMDSoASAFQAw%3D%3D">United Arab Emirates</a> | 
-            <a href="https://www.google.com/maps/place/%D8%A7%D9%84%D9%88%D9%84%D8%A7%D9%8A%D8%A7%D8%AA+%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%A9%E2%80%AD/@35.9514004,-77.7700457,3z/data=!3m1!4b1!4m6!3m5!1s0x54eab584e432360b:0x1c3bb99243deb742!8m2!3d38.7945952!4d-106.5348379!16zL20vMDljN3cw?entry=ttu&g_ep=EgoyMDI0MTAxNi4wIKXMDSoASAFQAw%3D%3D">United States</a> | 
-            <a href="https://www.google.com/maps/place/%D8%A7%D9%84%D9%85%D9%85%D9%84%D9%83%D8%A9+%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%A9%E2%80%AD/@55.378051,-3.435973,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipMY8YpaPXHcjhOkaDWuHayoTN_aqEtPnM-cX1tF!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipMY8YpaPXHcjhOkaDWuHayoTN_aqEtPnM-cX1tF%3Dw152-h86-k-no!7i4608!8i2592!4m7!3m6!1s0x25a3b1142c791a9:0xc4f8a0433288257a!8m2!3d55.378051!4d-3.435973!10e5!16zL20vMDdzc2M?entry=ttu&g_ep=EgoyMDI0MTAxNi4wIKXMDSoASAFQAw%3D%3D">United Kingdom</a> | 
-            <a href="https://www.google.com/maps/place/%D9%83%D9%86%D8%AF%D8%A7%E2%80%AD/@48.8321,-56.3316494,3z/data=!3m1!4b1!4m6!3m5!1s0x4b0d03d337cc6ad9:0x9968b72aa2438fa5!8m2!3d56.130366!4d-106.346771!16zL20vMGQwNjBn?entry=ttu&g_ep=EgoyMDI0MTAxNi4wIKXMDSoASAFQAw%3D%3D">Canada</a> | 
-            <a href="https://www.google.com/maps/place/%D8%A3%D8%B3%D8%AA%D8%B1%D8%A7%D9%84%D9%8A%D8%A7%E2%80%AD/@-18.6532854,179.775426,3z/data=!3m1!4b1!4m6!3m5!1s0x2b2bfd076787c5df:0x538267a1955b1352!8m2!3d-25.274398!4d133.775136!16zL20vMGNoZ2h5?entry=ttu&g_ep=EgoyMDI0MTAxNi4wIKXMDSoASAFQAw%3D%3D">Australia</a>
-        </div>
-       
-            
-  
-
-            
-
-    </footer>
+<footer>
+    <div class="social-media">
+        <a href="#"><img src="images/black-facebook-icon-1.jpg" alt="Facebook"></a>
+        <a href="#"><img src="images/twitter-app-new-logo-x-black-background_1017-45425.avif" alt="X"></a>
+        <a href="#"><img src="images/instagram-clipart-logo-black-6.png" alt="Instagram"></a>
+        <a href="#"><img src="images/R.png" alt="LinkedIn"></a>
+    </div>
+    <p>&copy; 2024 Smart Glasses News. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
